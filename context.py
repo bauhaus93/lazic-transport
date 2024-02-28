@@ -23,7 +23,7 @@ CONTEXT = {
                 },
                 {
                     "icon": "bi-arrow-right",
-                    "text": "Lagerung und Kommissionierung sowie damit verbundene Leistungen",
+                    "text": "Lagerung und Kommissionierung, sowie damit verbundene Leistungen",
                 },
             ],
             "image": "/images/taetigkeiten.jpg",
