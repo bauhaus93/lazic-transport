@@ -8,6 +8,10 @@ li.list-group-item {
   max-heigth: auto;
 }
 
+#logo {
+  max-width: 512px;
+}
+
 i.enumeration-symbol {
   font-size: 2rem;
   margin-right: 0.5rem;
