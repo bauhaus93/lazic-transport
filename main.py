@@ -23,7 +23,7 @@ def _render_templates(input_dir: Path, output_dir: Path) -> None:
 
     for template_name in env.list_templates():
         template_path = input_dir.joinpath(template_name)
-        if template_path.is_relative_to(pages_dir):
+        if pages_dir == template_path.parent:
             page_path = template_path.relative_to(pages_dir)
             output_path = (
                 output_dir.joinpath(page_path)
