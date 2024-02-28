@@ -9,8 +9,7 @@ CONTEXT = {
             "text": """Lazic Transport GmbH wurde 2013 von Radomir Lazic
 		in Salzburg gegründet. Seitdem beliefern wir in Zusammenarbeit mit
 		der Spedition Wildenhofer Großkonzerne wie SPAR, REWE und BILLA
-		PLUS, und das ganz nach unserem Motto: Schnell, Sicher und
-		Kompetent.""",
+		PLUS und Teekanne.""",
             "image": "/images/ueber_uns.jpg",
             "image_alt": "Radomir Lazic steht an einem Lieferwagen. Im Hintergrund ist ebenfalls ein LKW zu sehen.",
         },
@@ -18,11 +17,14 @@ CONTEXT = {
             "title": "Was wir tun?",
             "text": "Zu unseren Tätigkeiten zählen:",
             "enumeration": [
-                ("bi-arrow-right", "Gütertransport im Straßenverkehr über 3,5 t"),
-                (
-                    "bi-arrow-right",
-                    "Lagerung und Kommissionierung sowie damit verbundene Leistungen und Beteiligungen",
-                ),
+                {
+                    "icon": "bi-arrow-right",
+                    "text": "Gütertransport im Straßenverkehr über 3,5 t",
+                },
+                {
+                    "icon": "bi-arrow-right",
+                    "text": "Lagerung und Kommissionierung sowie damit verbundene Leistungen",
+                },
             ],
             "image": "/images/taetigkeiten.jpg",
             "image_alt": "Ein LKW der Spedition Wildenhofer steht angedockt in einer Ladebucht.",
@@ -30,9 +32,13 @@ CONTEXT = {
         {
             "title": "Zahlen & Fakten",
             "enumeration": [
-                ("bi-truck", "12 LKWs"),
-                ("bi-people", "15 MitarbeiterInnen"),
-                ("bi-geo-alt", "Sitz in Salzburg"),
+                {"icon": "bi-truck", "text": "12 LKWs"},
+                {"icon": "bi-people", "text": "15 MitarbeiterInnen"},
+                {
+                    "icon": "bi-geo-alt",
+                    "text": "Sitz in Salzburg",
+                    "link": "https://maps.app.goo.gl/KAmZeHmu9Di4vY5QA",
+                },
             ],
             "image": "images/zahlen_fakten.jpg",
             "image_alt": "Mehrere LKWs stehen aneinandergereiht da.",

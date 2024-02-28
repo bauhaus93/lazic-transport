@@ -17,11 +17,16 @@
 					{% endif %}
 					{% if card.enumeration %}
 					<ul class="list-group">
-						{% for symbol, text in card.enumeration %}
+						{% for row in card.enumeration %}
 						<li class="list-group-item enumeration">
-							<i class="bi enumeration-symbol {{ symbol }}">
-							</i>
-							{{ text }}
+							{% if row.link %}
+							<a href="{{ row.link }}" target="_new">
+							{% endif %}
+							<i class="bi enumeration-symbol {{ row.icon }}"></i>
+							{% if row.link %}
+							</a>
+							{% endif %}
+							{{ row.text }}
 						</li>
 						{% endfor %}
 					</ul>
