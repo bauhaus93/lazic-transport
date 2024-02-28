@@ -4,15 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile-bootstrap": "sass --style=compressed --no-source-map src/scss/bootstrap.scss build/bootstrap.css",
-    "copy-assets": "cp -rv assets/* build",
-    "make-build-dir": "rm -rfv build && mkdir -pv build",
-    "compile-templates": "python3 ./main.py src build",
-    "install-requirements": "pip3 install -r requirements",
-    "build-netlify": "npm run install-requirements && npm run build",
-    "build": "npm run make-build-dir && npm run compile-templates && npm run compile-bootstrap && npm run copy-assets",
     "server": "python3 -m http.server -d build",
-    "build_and_serve": "npm run build && npm run server"
+    "build": "npm run make-build-dir && npm run compile-templates && npm run compile-bootstrap && npm run copy-assets",
+    "make-build-dir": "rm -rfv build && mkdir -pv build",
+    "compile-bootstrap": "sass --style=compressed --no-source-map src/scss/bootstrap.scss build/bootstrap.css",
+    "compile-templates": "python3 ./main.py src build",
+    "copy-assets": "cp -rv assets/* build"
   },
   "author": "Jakob Fischer",
   "license": "ISC",
