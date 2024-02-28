@@ -8,7 +8,7 @@ CONTEXT = {
             "title": "Über uns",
             "text": """Lazic Transport GmbH wurde 2013 von Radomir Lazic
 		in Salzburg gegründet. Seitdem beliefern wir in Zusammenarbeit mit
-		der Spedition Wildenhofer Großkonzerne wie SPAR, REWE und BILLA
+		der Spedition Wildenhofer Großkonzerne wie SPAR, REWE, BILLA
 		PLUS und Teekanne.""",
             "image": "/images/ueber_uns.jpg",
             "image_alt": "Radomir Lazic steht an einem Lieferwagen. Im Hintergrund ist ebenfalls ein LKW zu sehen.",
