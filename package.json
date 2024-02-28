@@ -7,7 +7,7 @@
     "compile-bootstrap": "sass --style=compressed --no-source-map src/scss/bootstrap.scss build/bootstrap.css",
     "copy-assets": "cp -rv assets/* build",
     "make-build-dir": "rm -rfv build && mkdir -pv build",
-    "setup": "python3 -mvenv venv && source venv/bin/activate && pip install -r requirements.txt",
+    "setup": "sudo apt install python3-pip && python3 -mvenv venv && source venv/bin/activate && pip install -r requirements.txt",
     "compile-templates": "source venv/bin/activate && python3 ./main.py src build",
     "build": "npm run make-build-dir && npm run compile-templates && npm run compile-bootstrap && npm run copy-assets",
     "build-full": "npm run setup  && npm run build",
